@@ -1,0 +1,23 @@
+{
+  "Description" : [ "diffusion module..." ],
+  "DataSource" : "data",
+  "NumpyFile" : "latent.npy",
+  "pcFile" : "pc.npy",
+  "Diffusion" : {
+    "latent_size" : 1024
+  } ,
+
+  "Alpha":0.05,
+
+  "NumEpochs" : 40,
+  "LogFrequency" : 10,
+
+  "LearningRate" : {
+    "init" : 1e-4,
+    "step_size" : 1000000,
+    "gamma" : 0.5
+  } ,
+  "Device":"cuda:2"
+
+}
+
